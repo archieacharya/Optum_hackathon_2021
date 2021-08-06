@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupportActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:text="Customer Support"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+
+            android:fontFamily="@font/varellaaa"
+            android:text="If you have any query then get in touch with us. Text us via WhatsApp or email us."
+            android:textColor="@color/colorPrimary"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/varellaaa"
+            android:text="We will get back to you as soon as we can. Rest assured, your issues will be our foremost priority."
+            android:textColor="@color/colorPrimary"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <ImageView
+                    android:id="@+id/whatsappppp"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:src="@drawable/wapp" />
+
+                <ImageView
+                    android:id="@+id/emailll"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:src="@drawable/mail" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/varellaaa"
+            android:text="Nirogo \nlaxmi nagar \nKhandagiri, Delhi\n"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

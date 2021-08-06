@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefreshLayout"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AppointmentHistory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Appointment History"/>
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/swiperefresh"
+                android:layout_marginBottom="10dp"
+                android:layout_height="match_parent">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:id="@+id/recycler_order"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:src="@drawable/errorpng"
+                        android:id="@+id/iv_not_found"
+                        android:visibility="gone"
+
+                        android:layout_height="250dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/varelaround"
+                        android:textSize="15sp"
+                        android:id="@+id/tv_not_found"
+                        android:layout_marginBottom="80dp"
+
+                        android:visibility="gone"
+                        android:textColor="@color/textGrey"
+                        android:layout_marginTop="20dp"
+                        android:text="There are no orders to show yet!"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+    <!--
+
+    order_history_recycler
+    -->
+

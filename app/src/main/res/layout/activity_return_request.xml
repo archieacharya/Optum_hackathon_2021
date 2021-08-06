@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReturnRequestActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/arial"
+            android:text="Return Request"
+            android:textColor="@color/newblack"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:foregroundGravity="center"
+            app:cardElevation="0dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#FFE6EE"
+            app:cardCornerRadius="11dp"
+            android:layout_height="80dp">
+
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_margin="7dp"
+
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/varellaaa"
+                android:text="Return Requests approval are subject to Return Policies of stores and/or on verification by us. For more information refer to the Returns Policy manual."
+                android:textSize="10sp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:layout_marginLeft="10dp"
+
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Select Items to Return"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/recycler_mrp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:id="@+id/submitmrp"
+        android:fontFamily="@font/varellaaa"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg2"
+        android:text="SUBMIT"/>
+</RelativeLayout>

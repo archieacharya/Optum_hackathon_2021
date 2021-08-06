@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/parent_layoutTwo"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+
+    android:layout_width="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        app:cardElevation="@null"
+        android:layout_height="33.5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_margin="7dp"
+
+            android:layout_height="match_parent">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8">
+
+
+
+                <TextView
+                    android:id="@+id/ptype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muktaa"
+                    android:text="Total payment"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:gravity="start">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:id="@+id/pprice"
+                    android:fontFamily="@font/muktaa"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 150"
+                    android:textColor="@color/newblack"
+
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

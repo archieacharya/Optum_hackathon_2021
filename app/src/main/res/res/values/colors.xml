@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01D494</color>
+    <color name="colorPrimaryDark">#01D494</color>
+    <color name="colorAccent">#007940</color>
+    <color name="btnSignActive">#03D456</color>
+    <color name="ForgotPassword">#1EC042</color>
+    <color name="newblack">#103511</color>
+
+    <color name="paan">#3229DA</color>
+
+    <color name="yellow">#EEDF08</color>
+
+
+
+    <color name="textColorSecondary">#A0A0A0</color>
+
+    <color name="colorMarker">#39474E</color>
+    <color name="colorMarkerInnerIcon">#54656D</color>
+
+    <color name="textColorPrimary">#A0A0A0</color>
+
+
+    <color name="orange">#FFAB40</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent2">#10000000</color>
+
+    <color name="greennew">#1EC041</color>
+    <color name="overlayBackground">#01D494</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+    <color name="blue">#41A9FF</color>
+    <color name="red">#E6400B</color>
+
+
+</resources>

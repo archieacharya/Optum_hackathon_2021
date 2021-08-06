@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReferActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+
+            android:fontFamily="casual"
+            android:text="Refer Nirogo"
+            android:textColor="@color/colorPrimaryDark"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+p        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/varellaaa"
+            android:text="Please share nirogo to get treatment at your home and protect your family from covid 19"
+            android:textColor="@color/colorPrimary"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fb"/>
+
+                <ImageView
+                    android:id="@+id/whatsapp"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/wapp"/>
+
+                <ImageView
+                    android:id="@+id/insta"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/insta"/>
+
+                <ImageView
+                    android:id="@+id/more"
+                    android:src="@drawable/more"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

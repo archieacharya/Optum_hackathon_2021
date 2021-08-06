@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="70dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:id="@+id/heading"
+            android:fontFamily="casual"
+            android:text="Book Apointment"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardElevation="1dp"
+            android:layout_margin="5dp"
+            android:id="@+id/cardddd"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+
+            android:weightSum="10"
+            android:layout_marginTop="5dp"
+
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_gravity="center"
+                    android:id="@+id/icongrain"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="8"
+
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/multi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Amitesh Anand"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:gravity="start">
+
+                </TextView>
+
+
+
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mukta"
+                        android:textSize="14sp"
+                        android:id="@+id/adresssssss"
+                        android:textColor="#000"
+                        android:text="G132, Cosmopolis Apartment, Khandagiri"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardElevation="1dp"
+            android:layout_margin="5dp"
+
+            android:id="@+id/cardddd1"
+            android:layout_height="wrap_content">
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:fontFamily="@font/popp"
+            android:text="Online Payment Methods"
+            android:id="@+id/dateeee"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardElevation="1dp"
+            android:layout_margin="5dp"
+
+            android:id="@+id/cardddd3"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:fontFamily="@font/popp"
+            android:layout_marginTop="12dp"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="Enter Patient Name">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile"
+            android:fontFamily="@font/popp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLines="1"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
+            android:maxLength="10"
+            android:hint="Enter Calling Number">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/whatsapp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/popp"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLines="1"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
+            android:maxLength="10"
+            android:hint="Enter Whatsapp Number">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/popp"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="Enter Email ID">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/ttl_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:fontFamily="@font/popp"
+            android:gravity="center"
+            android:text="TOTAL AMOUNT: Rs.1216"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg2"
+        android:textColor="@color/white"
+        android:id="@+id/pay"
+        android:layout_margin="7dp"
+        android:fontFamily="@font/popp"
+
+        android:text="Pay Now">
+
+    </Button>
+
+</RelativeLayout>

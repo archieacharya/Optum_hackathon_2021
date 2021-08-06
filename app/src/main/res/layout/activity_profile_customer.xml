@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileCustomer">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:text="User Profile"
+            android:textColor="@color/newblack"/>
+
+
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/popp"
+                android:hint="Manoj Kumar"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:maxLength="20"
+                android:layout_gravity="center"
+                android:inputType="text"/>
+
+
+
+            <TextView
+                android:id="@+id/signupnum1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/popp"
+                android:hint="+916201113630"
+android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:inputType="number"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_grant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg2"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="18dp"
+        android:fontFamily="@font/varellaaa"
+        android:stateListAnimator="@null"
+        android:text="Update Details"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

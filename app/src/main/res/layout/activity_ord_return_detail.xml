@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".OrdReturnDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial"
+        android:text="Return Details"
+
+        android:textColor="@color/newblack"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:textSize="18sp"
+            android:text="Reliance Fresh"
+            android:id="@+id/iddddd"
+            android:textColor="@color/newblack"/>
+
+        <TextView
+            android:id="@+id/priceee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/arial"
+            android:gravity="right"
+            android:text="Rs. 450"
+            android:textColor="@color/newblack"
+            android:textSize="18sp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/sts"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:text="Status: RETURN ACCEPTED"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dateeee"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:text="17-07-2020 09:57"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:text="Transaction/Refund Details:"
+            android:textColor="#5E5E5E"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:text="Items requested for Return:"
+            android:textColor="@android:color/darker_gray"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_order"/>
+
+    <!--
+
+    order_history_recycler
+    -->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/asap"
+            android:id="@+id/enter_otp"
+            android:hint="Enter PIN"
+            android:visibility="gone"
+            android:textColor="@color/newblack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/asap"
+            android:id="@+id/confirm"
+            android:text="CONFIRM"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

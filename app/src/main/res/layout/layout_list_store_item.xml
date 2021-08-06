@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/parent_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+
+    android:layout_width="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="0.5dp"
+
+        app:cardElevation="@null"
+        android:layout_height="93dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageaa"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/arial"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grocery"
+                    android:textColor="@color/newblack"
+                    android:textSize="16sp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/quantityaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/asap"
+                    android:text="500g"
+                    android:paddingBottom="5dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:gravity="start"/>
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/asap"
+                    android:text="INR 30"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:gravity="start">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="6">
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:layout_width="68dp"
+                    android:layout_height="30dp"
+                    app:textSize="6dp"
+                    android:id="@+id/quantityggggg"
+                    app:backGroundColor="#FAFAFA"
+                    app:backgroundDrawable="@drawable/bg4"
+                    app:textColor="@color/colorPrimaryDark"
+                    app:finalNumber="1000"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
